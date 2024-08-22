@@ -1,0 +1,12 @@
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\bin\Debug\net8.0\Diet.Tracking.API.Domain.deps.json
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\bin\Debug\net8.0\Diet.Tracking.API.Domain.dll
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\bin\Debug\net8.0\Diet.Tracking.API.Domain.pdb
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.AssemblyInfoInputs.cache
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.AssemblyInfo.cs
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.sourcelink.json
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.dll
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\refint\Diet.Tracking.API.Domain.dll
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\Diet.Tracking.API.Domain.pdb
+C:\Users\marcu\Desktop\Codes\diet-tracking-api\Diet.Tracking.API.Domain\obj\Debug\net8.0\ref\Diet.Tracking.API.Domain.dll

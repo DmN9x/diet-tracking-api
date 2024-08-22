@@ -1,0 +1,115 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Diet.Tracking.API.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Diet.Tracking.API.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Diet.Tracking.API.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Diet.Tracking.API.Abstractions.dll": {}
+        }
+      },
+      "Diet.Tracking.API.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Diet.Tracking.API.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Diet.Tracking.API.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Diet.Tracking.API.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj",
+      "msbuildProject": "../Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj"
+    },
+    "Diet.Tracking.API.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj",
+      "msbuildProject": "../Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Diet.Tracking.API.Abstractions >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\marcu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\marcu\\Desktop\\Codes\\diet-tracking-api\\Diet.Tracking.API.Services\\Diet.Tracking.API.Services.csproj",
+      "projectName": "Diet.Tracking.API.Services",
+      "projectPath": "C:\\Users\\marcu\\Desktop\\Codes\\diet-tracking-api\\Diet.Tracking.API.Services\\Diet.Tracking.API.Services.csproj",
+      "packagesPath": "C:\\Users\\marcu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marcu\\Desktop\\Codes\\diet-tracking-api\\Diet.Tracking.API.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\marcu\\Desktop\\Codes\\diet-tracking-api\\Diet.Tracking.API.Abstractions\\Diet.Tracking.API.Abstractions.csproj": {
+              "projectPath": "C:\\Users\\marcu\\Desktop\\Codes\\diet-tracking-api\\Diet.Tracking.API.Abstractions\\Diet.Tracking.API.Abstractions.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

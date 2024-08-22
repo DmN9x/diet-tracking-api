@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Diet.Tracking.API.Controllers.DietTrackingController",
+    "Method": "PostPersonalData",
+    "RelativePath": "diet-tracking/post-personal-information",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalInformation",
+        "Type": "Diet.Tracking.API.Domain.Models.PersonalInformationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Diet.Tracking.API.Domain.Models.FullDietModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

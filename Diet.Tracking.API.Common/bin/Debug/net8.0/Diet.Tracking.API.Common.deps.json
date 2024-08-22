@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Diet.Tracking.API.Common/1.0.0": {
+        "runtime": {
+          "Diet.Tracking.API.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Diet.Tracking.API.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

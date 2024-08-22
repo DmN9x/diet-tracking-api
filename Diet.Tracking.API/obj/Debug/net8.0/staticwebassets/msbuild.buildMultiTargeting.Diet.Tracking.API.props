@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Diet.Tracking.API.props" />
+</Project>
