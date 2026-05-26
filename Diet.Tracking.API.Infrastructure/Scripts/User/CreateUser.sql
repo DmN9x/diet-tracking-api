@@ -1,4 +1,6 @@
 INSERT INTO "Projetos"."user" (
+    email,
+    password,
     first_name,
     last_name,
     birth_date,
@@ -6,10 +8,13 @@ INSERT INTO "Projetos"."user" (
     current_weight,
     goal_weight,
     height,
+    body_mass_index,
     workout_frequency,
     personal_goal
 )
 VALUES (
+    :Email,
+    :Password,
     :FirstName,
     :LastName,
     :BirthDate,
@@ -17,6 +22,7 @@ VALUES (
     :CurrentWeight,
     :GoalWeight,
     :Height,
+    :BMI,
     :WorkoutFrequency,
     :PersonalGoal
 );

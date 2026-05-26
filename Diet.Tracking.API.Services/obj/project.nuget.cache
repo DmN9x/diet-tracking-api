@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+GMLuF+4N+o=",
+  "dgSpecHash": "Lt9UgvabwLQ=",
   "success": true,
   "projectFilePath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Services/Diet.Tracking.API.Services.csproj",
   "expectedPackageFiles": [
+    "/Users/marcusgustavoromao/.nuget/packages/bcrypt.net-next/4.2.0/bcrypt.net-next.4.2.0.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.dependencyinjection.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512"
   ],
   "logs": []

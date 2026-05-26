@@ -7,6 +7,7 @@ SELECT
     current_weight as CurrentWeight,
     goal_weight as GoalWeight,
     height,
+    body_mass_index as BMI,
     workout_frequency as WorkoutFrequency,
     personal_goal as PersonalGoal
 FROM

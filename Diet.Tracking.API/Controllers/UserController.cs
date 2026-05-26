@@ -2,6 +2,8 @@ using Diet.Tracking.API.Abstractions.Services;
 using Diet.Tracking.API.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Diet.Tracking.API.Domain.Exceptions;
+using Diet.Tracking.API.Domain.Requests;
+using Diet.Tracking.API.Domain.Responses;
 
 namespace Diet.Tracking.API.Controllers
 {
@@ -15,17 +17,8 @@ namespace Diet.Tracking.API.Controllers
             _userService = userService;
         }
         
-        [HttpGet]
-        [ProducesResponseType(typeof(UserModel), 200)]
-        [ProducesResponseType(typeof(ErrorModel), 204)]
-        [ProducesResponseType(typeof(ErrorModel), 400)]
-        [ProducesResponseType(typeof(ErrorModel), 404)]
-        [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> GetAllAsync()
-            => Ok(await _userService.GetAllAsync());
-        
         [HttpGet("{id}")]
-        [ProducesResponseType(typeof(UserModel), 200)]
+        [ProducesResponseType(typeof(UserResponse), 200)]
         [ProducesResponseType(typeof(ErrorModel), 204)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 404)]
@@ -39,33 +32,31 @@ namespace Diet.Tracking.API.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(typeof(UserModel), 201)]
+        [ProducesResponseType(typeof(UserResponse), 201)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> CreateAsync([FromBody] UserModel user)
+        public async Task<IActionResult> CreateAsync([FromBody] UserRequest user)
         {
-            user.Validate();
             return Created(string.Empty, await _userService.CreateAsync(user));
         }
 
         [HttpPatch]
-        [ProducesResponseType(typeof(UserModel), 200)]
+        [ProducesResponseType(200)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 404)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> UpdateAsync([FromBody] UserModel user)
+        public async Task<IActionResult> UpdateAsync([FromBody] UserRequest user)
         {
-            user.Validate();
             await _userService.UpdateAsync(user);
             return Ok();
         }
 
         [HttpDelete("{id}")]
-        [ProducesResponseType(typeof(UserModel), 200)]
+        [ProducesResponseType(200)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
@@ -75,6 +66,7 @@ namespace Diet.Tracking.API.Controllers
         {
             if (id < 1)
                 throw new ValidationException(422, "Id must be informed");
+            
             await _userService.DeleteAsync(id);
             return Ok();
         }

@@ -13,6 +13,7 @@
 	<ProjectReference Include="../Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj" />
 	<ProjectReference Include="../Diet.Tracking.API.Services/Diet.Tracking.API.Services.csproj" />
 	<ProjectReference Include="../Diet.Tracking.API.Infrastructure/Diet.Tracking.API.Infrastructure.csproj" />
+    <ProjectReference Include="../Diet.Tracking.API.Middleware/Diet.Tracking.API.Middleware.csproj"/>
   </ItemGroup>
 
 </Project>

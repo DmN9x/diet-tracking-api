@@ -1,10 +1,12 @@
-﻿using Diet.Tracking.API.Domain.Models;
+﻿using Diet.Tracking.API.Domain.Entities;
+using Diet.Tracking.API.Domain.Responses;
 
 namespace Diet.Tracking.API.Infrastructure.Abstractions.Repository
 {
     public interface IUserRepository
     {
-        public Task<UserModel> GetByIdAsync(int id);
+        Task<UserResponse> GetByIdAsync(int id);
+        Task<UserResponse> CreateAsync(User user);
     }
 }
 

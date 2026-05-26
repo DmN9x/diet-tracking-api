@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace Diet.Tracking.API.Enum
+namespace Diet.Tracking.API.Domain.Enum
 {
     public enum GoalsEnum
     {

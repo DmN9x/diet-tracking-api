@@ -1,6 +1,7 @@
 using Diet.Tracking.API.Abstractions.Services;
 using Diet.Tracking.API.Domain.Exceptions;
-using Diet.Tracking.API.Domain.Models;
+using Diet.Tracking.API.Domain.Requests;
+using Diet.Tracking.API.Domain.Responses;
 using Diet.Tracking.API.Infrastructure.Abstractions.Repository;
 
 namespace Diet.Tracking.API.Services.Services;
@@ -12,13 +13,8 @@ public class UserService : IUserService
     {
         _userRepository = userRepository;
     }
-
-    public async Task<IEnumerable<UserModel>> GetAllAsync()
-    {
-        return null;
-    }
-
-    public async Task<UserModel> GetByIdAsync(int id)
+    
+    public async Task<UserResponse> GetByIdAsync(int id)
     {
         if (id <= 0)
             throw new ValidationException(422, "User id must be informed!");
@@ -27,12 +23,16 @@ public class UserService : IUserService
         return result;
     }
 
-    public async Task<int> CreateAsync(UserModel user)
+    public async Task<UserResponse> CreateAsync(UserRequest userRequest)
     {
-        return 0;
+        var user = userRequest.CreateByRequest();
+        user.Validate();
+        
+        var result = await _userRepository.CreateAsync(user);
+        return result;
     }
 
-    public async Task UpdateAsync(UserModel user)
+    public async Task UpdateAsync(UserRequest user)
     {
         
     }
