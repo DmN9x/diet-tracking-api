@@ -11,6 +11,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <ProjectReference Include="../Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj" />
 	<ProjectReference Include="../Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj" />
+	<ProjectReference Include="../Diet.Tracking.API.Services/Diet.Tracking.API.Services.csproj" />
+	<ProjectReference Include="../Diet.Tracking.API.Infrastructure/Diet.Tracking.API.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
