@@ -24,18 +24,18 @@ namespace Diet.Tracking.API.Controllers
         public async Task<IActionResult> GetAllAsync()
             => Ok(await _userService.GetAllAsync());
         
-        [HttpGet("{userId}")]
+        [HttpGet("{id}")]
         [ProducesResponseType(typeof(UserModel), 200)]
         [ProducesResponseType(typeof(ErrorModel), 204)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 404)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> GetByIdAsync([FromRoute] int userId)
+        public async Task<IActionResult> GetByIdAsync([FromRoute] int id)
         {
-            if (userId < 1)
+            if (id < 1)
                 throw new ValidationException(422, "Id must be informed");
             
-            return Ok(await _userService.GetByIdAsync(userId));
+            return Ok(await _userService.GetByIdAsync(id));
         }
 
         [HttpPost]
@@ -64,18 +64,18 @@ namespace Diet.Tracking.API.Controllers
             return Ok();
         }
 
-        [HttpDelete("{userId}")]
+        [HttpDelete("{id}")]
         [ProducesResponseType(typeof(UserModel), 200)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 404)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> DeleteAsync([FromRoute] int userId)
+        public async Task<IActionResult> DeleteAsync([FromRoute] int id)
         {
-            if (userId < 1)
+            if (id < 1)
                 throw new ValidationException(422, "Id must be informed");
-            await _userService.DeleteAsync(userId);
+            await _userService.DeleteAsync(id);
             return Ok();
         }
     }

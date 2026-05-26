@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NssIkC2DWmA=",
+  "dgSpecHash": "AmWqigmZK7E=",
   "success": true,
   "projectFilePath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API/Diet.Tracking.API.csproj",
   "expectedPackageFiles": [
+    "/Users/marcusgustavoromao/.nuget/packages/dapper/2.1.79/dapper.2.1.79.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.configuration/11.0.0-preview.4.26230.115/microsoft.extensions.configuration.11.0.0-preview.4.26230.115.nupkg.sha512",

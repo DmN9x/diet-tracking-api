@@ -40,6 +40,19 @@
         "runtime": {
           "bin/placeholder/Diet.Tracking.API.Domain.dll": {}
         }
+      },
+      "Diet.Tracking.API.Infrastructure.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Diet.Tracking.API.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Diet.Tracking.API.Infrastructure.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Diet.Tracking.API.Infrastructure.Abstractions.dll": {}
+        }
       }
     }
   },
@@ -82,11 +95,17 @@
       "type": "project",
       "path": "../Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj",
       "msbuildProject": "../Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj"
+    },
+    "Diet.Tracking.API.Infrastructure.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj",
+      "msbuildProject": "../Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Diet.Tracking.API.Abstractions >= 1.0.0",
+      "Diet.Tracking.API.Infrastructure.Abstractions >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 11.0.0-preview.4.26230.115"
     ]
   },
@@ -117,6 +136,9 @@
           "projectReferences": {
             "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj": {
               "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj"
+            },
+            "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj": {
+              "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj"
             }
           }
         }

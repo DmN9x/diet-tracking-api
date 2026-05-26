@@ -126,6 +126,69 @@
         }
       }
     },
+    "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj",
+        "projectName": "Diet.Tracking.API.Infrastructure.Abstractions",
+        "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj",
+        "packagesPath": "/Users/marcusgustavoromao/.nuget/packages/",
+        "outputPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/marcusgustavoromao/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj": {
+                "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Domain/Diet.Tracking.API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.312/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Services/Diet.Tracking.API.Services.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -150,6 +213,9 @@
             "projectReferences": {
               "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj": {
                 "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Abstractions/Diet.Tracking.API.Abstractions.csproj"
+              },
+              "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj": {
+                "projectPath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Infrastructure.Abstractions/Diet.Tracking.API.Infrastructure.Abstractions.csproj"
               }
             }
           }

@@ -1,4 +1,5 @@
 using Diet.Tracking.API.Abstractions.Services;
+using Diet.Tracking.API.Services.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Diet.Tracking.API.Services;
