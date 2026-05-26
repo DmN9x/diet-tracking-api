@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diet.Tracking.API.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ae6769ccdff44ddc38bf7bd8942b7bd17fe8473")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abfd761145e179deca462ea648270dc583d378ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diet.Tracking.API.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diet.Tracking.API.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

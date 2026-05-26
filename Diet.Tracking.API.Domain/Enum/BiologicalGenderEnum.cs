@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Diet.Tracking.API.Domain.Enum
 {
-    public enum GenderEnum
+    public enum BiologicalGenderEnum
     {
         [Description("Male")]
         Male,
