@@ -32,15 +32,13 @@ namespace Diet.Tracking.API.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(typeof(UserResponse), 201)]
+        [ProducesResponseType(201)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
         public async Task<IActionResult> CreateAsync([FromBody] UserRequest user)
-        {
-            return Created(string.Empty, await _userService.CreateAsync(user));
-        }
+            => Created(string.Empty, await _userService.CreateAsync(user));
 
         [HttpPatch]
         [ProducesResponseType(200)]

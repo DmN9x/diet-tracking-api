@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qf10XHM80nM=",
+  "dgSpecHash": "qxbW1UsOmgw=",
   "success": true,
   "projectFilePath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API/Diet.Tracking.API.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,7 @@
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.configuration/11.0.0-preview.4.26230.115/microsoft.extensions.configuration.11.0.0-preview.4.26230.115.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.configuration.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.configuration.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.dependencyinjection.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512",
+    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.logging.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.logging.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.objectpool/8.0.11/microsoft.extensions.objectpool.8.0.11.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.primitives/11.0.0-preview.4.26230.115/microsoft.extensions.primitives.11.0.0-preview.4.26230.115.nupkg.sha512",
@@ -28,6 +28,7 @@
     "/Users/marcusgustavoromao/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/system.buffers/4.6.1/system.buffers.4.6.1.nupkg.sha512",
+    "/Users/marcusgustavoromao/.nuget/packages/system.diagnostics.diagnosticsource/11.0.0-preview.4.26230.115/system.diagnostics.diagnosticsource.11.0.0-preview.4.26230.115.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/system.io.pipelines/11.0.0-preview.4.26230.115/system.io.pipelines.11.0.0-preview.4.26230.115.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/system.memory/4.6.3/system.memory.4.6.3.nupkg.sha512",
     "/Users/marcusgustavoromao/.nuget/packages/system.runtime.compilerservices.unsafe/6.1.2/system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
