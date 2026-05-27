@@ -39,6 +39,26 @@ public class UserRequest
         };
     }
     
+    public User CreateByRequest(int id)
+    {
+        return new User
+        {
+            Id = id,
+            Email = Email,
+            Password = EncryptPassword(Password),
+            FirstName = FirstName,
+            LastName = LastName,
+            BirthDate = BirthDate,
+            BiologicalGender = BiologicalGender,
+            CurrentWeight = CurrentWeight,
+            GoalWeight = GoalWeight,
+            Height = Height,
+            BMI = CalculateBMI(CurrentWeight, Height, MetricSystem),
+            WorkoutFrequency = WorkoutFrequency,
+            PersonalGoal = PersonalGoal
+        };
+    }
+    
     private static BodyMassIndexEnum CalculateBMI(double height, double weight, MetricSystemEnum metricSystem)
     {
         if (metricSystem.Equals(MetricSystemEnum.Imperial))

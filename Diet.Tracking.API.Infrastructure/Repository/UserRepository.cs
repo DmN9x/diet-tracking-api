@@ -30,7 +30,7 @@ namespace Diet.Tracking.API.Infrastructure.Repository
             return result;
         }
 
-        public async Task<UserResponse> CreateAsync(User user)
+        public async Task CreateAsync(User user)
         {
             var query = await File.ReadAllTextAsync(string.Concat(_basePath, "User/CreateUser.sql"));
 
@@ -49,10 +49,32 @@ namespace Diet.Tracking.API.Infrastructure.Repository
             parameters.Add("PersonalGoal", user.PersonalGoal);
             
             await _postgresConnection.OpenAsync();
-            var result = await _postgresConnection.QueryFirstOrDefaultAsync<UserResponse>(query, parameters);
+            await _postgresConnection.ExecuteAsync(query, parameters);
             await _postgresConnection.CloseAsync();
+        }
+        
+        public async Task UpdateAsync(User user)
+        {
+            var query = await File.ReadAllTextAsync(string.Concat(_basePath, "User/UpdateUser.sql"));
 
-            return result;
+            var parameters = new DynamicParameters();
+            parameters.Add("Email", user.Email);
+            parameters.Add("Password", user.Password);
+            parameters.Add("FirstName", user.FirstName);
+            parameters.Add("LastName", user.LastName);
+            parameters.Add("BirthDate", user.BirthDate);
+            parameters.Add("BiologicalGender", user.BiologicalGender);
+            parameters.Add("CurrentWeight", user.CurrentWeight);
+            parameters.Add("GoalWeight", user.GoalWeight);
+            parameters.Add("Height", user.Height);
+            parameters.Add("BMI", user.BMI);
+            parameters.Add("WorkoutFrequency", user.WorkoutFrequency);
+            parameters.Add("PersonalGoal", user.PersonalGoal);
+            parameters.Add("Id", user.Id);
+            
+            await _postgresConnection.OpenAsync();
+            await _postgresConnection.QueryFirstOrDefaultAsync(query, parameters);
+            await _postgresConnection.CloseAsync();
         }
     }
 }

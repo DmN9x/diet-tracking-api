@@ -6,7 +6,7 @@ namespace Diet.Tracking.API.Domain.Entities;
 
 public class User
 {
-    public int Id { get; }
+    public int Id { get; init; }
     public string Email { get; set; }
     public string Password { get; set; }
     public string FirstName { get; set; }

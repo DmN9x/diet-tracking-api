@@ -38,7 +38,7 @@ public class UserService : IUserService
         }
     }
 
-    public async Task<UserResponse> CreateAsync(UserRequest userRequest)
+    public async Task CreateAsync(UserRequest userRequest)
     {
         try
         {
@@ -46,8 +46,7 @@ public class UserService : IUserService
             user.Validate();
 
             _logger.LogInformation($"Creating user with id {user.Id}.");
-            var result = await _userRepository.CreateAsync(user);
-            return result;
+            await _userRepository.CreateAsync(user);
         }
         catch (Exception ex)
         {
@@ -56,9 +55,21 @@ public class UserService : IUserService
         }
     }
 
-    public async Task UpdateAsync(UserRequest user)
+    public async Task UpdateAsync(int id, UserRequest userRequest)
     {
-        
+        try
+        {
+            var user = userRequest.CreateByRequest(id);
+            user.Validate();
+            
+            _logger.LogInformation($"Updating user with id {id}.");
+            await _userRepository.UpdateAsync(user);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Failed to update user with id {id}.", ex.Message);
+            throw;
+        }
     }
 
     public async Task DeleteAsync(int id)

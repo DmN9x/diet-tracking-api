@@ -7,8 +7,8 @@ namespace Diet.Tracking.API.Abstractions.Services
     public interface IUserService
     {
         Task<UserResponse> GetByIdAsync(int id);
-        Task<UserResponse> CreateAsync(UserRequest userRequest);
-        Task UpdateAsync(UserRequest userRequest);
+        Task CreateAsync(UserRequest userRequest);
+        Task UpdateAsync(int id, UserRequest userRequest);
         Task DeleteAsync(int id);
     }
 }

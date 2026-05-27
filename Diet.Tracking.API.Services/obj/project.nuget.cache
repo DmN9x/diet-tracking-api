@@ -1,16 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sO1k4FMM78I=",
+  "dgSpecHash": "4JfufXzlJ0A=",
   "success": true,
   "projectFilePath": "/Users/marcusgustavoromao/Codes/diet-tracking-api/Diet.Tracking.API.Services/Diet.Tracking.API.Services.csproj",
   "expectedPackageFiles": [
     "/Users/marcusgustavoromao/.nuget/packages/bcrypt.net-next/4.2.0/bcrypt.net-next.4.2.0.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.dependencyinjection.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.logging.abstractions/11.0.0-preview.4.26230.115/microsoft.extensions.logging.abstractions.11.0.0-preview.4.26230.115.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/system.buffers/4.6.1/system.buffers.4.6.1.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/system.diagnostics.diagnosticsource/11.0.0-preview.4.26230.115/system.diagnostics.diagnosticsource.11.0.0-preview.4.26230.115.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/system.memory/4.6.3/system.memory.4.6.3.nupkg.sha512",
-    "/Users/marcusgustavoromao/.nuget/packages/system.runtime.compilerservices.unsafe/6.1.2/system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
+    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/Users/marcusgustavoromao/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.0/microsoft.extensions.logging.abstractions.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }

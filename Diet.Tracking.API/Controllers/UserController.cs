@@ -38,18 +38,21 @@ namespace Diet.Tracking.API.Controllers
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
         public async Task<IActionResult> CreateAsync([FromBody] UserRequest user)
-            => Created(string.Empty, await _userService.CreateAsync(user));
+        {
+            await _userService.CreateAsync(user);
+            return Created();
+        }
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
         [ProducesResponseType(200)]
         [ProducesResponseType(typeof(ErrorModel), 400)]
         [ProducesResponseType(typeof(ErrorModel), 401)]
         [ProducesResponseType(typeof(ErrorModel), 403)]
         [ProducesResponseType(typeof(ErrorModel), 404)]
         [ProducesResponseType(typeof(ErrorModel), 500)]
-        public async Task<IActionResult> UpdateAsync([FromBody] UserRequest user)
+        public async Task<IActionResult> UpdateAsync([FromRoute] int id, [FromBody] UserRequest userRequest)
         {
-            await _userService.UpdateAsync(user);
+            await _userService.UpdateAsync(id, userRequest);
             return Ok();
         }
 

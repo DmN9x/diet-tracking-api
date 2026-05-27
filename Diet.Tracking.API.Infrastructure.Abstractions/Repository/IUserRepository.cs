@@ -6,7 +6,8 @@ namespace Diet.Tracking.API.Infrastructure.Abstractions.Repository
     public interface IUserRepository
     {
         Task<UserResponse> GetByIdAsync(int id);
-        Task<UserResponse> CreateAsync(User user);
+        Task CreateAsync(User user);
+        Task UpdateAsync(User user);
     }
 }
 
