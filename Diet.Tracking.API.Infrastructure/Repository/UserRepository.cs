@@ -76,6 +76,17 @@ namespace Diet.Tracking.API.Infrastructure.Repository
             await _postgresConnection.QueryFirstOrDefaultAsync(query, parameters);
             await _postgresConnection.CloseAsync();
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            var query = await File.ReadAllTextAsync(string.Concat(_basePath, "User/DeleteUserById.sql"));
+            var parameters = new DynamicParameters();
+            parameters.Add("Id", id);
+            
+            await _postgresConnection.OpenAsync();
+            await _postgresConnection.ExecuteAsync(query, parameters);
+            await _postgresConnection.CloseAsync();
+        }
     }
 }
 

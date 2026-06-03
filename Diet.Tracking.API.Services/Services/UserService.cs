@@ -74,6 +74,15 @@ public class UserService : IUserService
 
     public async Task DeleteAsync(int id)
     {
-        
+        try
+        {
+            _logger.LogInformation($"Deleting user with id {id}.");
+            await _userRepository.DeleteAsync(id);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"Failed to delete user {id}.", ex.Message);
+            throw;
+        }
     }
 }

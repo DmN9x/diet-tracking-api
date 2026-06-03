@@ -8,6 +8,7 @@ namespace Diet.Tracking.API.Infrastructure.Abstractions.Repository
         Task<UserResponse> GetByIdAsync(int id);
         Task CreateAsync(User user);
         Task UpdateAsync(User user);
+        Task DeleteAsync(int id);
     }
 }
 

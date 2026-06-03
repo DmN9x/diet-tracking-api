@@ -1,4 +1,4 @@
 DELETE FROM
-    "user"
+    "Projetos"."user"
 WHERE
     id = :Id
